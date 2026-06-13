@@ -663,7 +663,12 @@ var DIET = [
       { label:'Avoid', class:'avoid', chipClass:'avoid', items:['Eel — all varieties (incl. unagi)','Raw meat (incl. beef tartare)','Whale','Dolphin','Horse','Lamb','Sheep','Goat','Veal','Rabbit','Baby animals (e.g. suckling pig)','Swordfish'] },
       { label:'Personal dislike', class:'', chipClass:'', items:['Octopus','Sea eel (Anago)'] } ] },
   { name:'Harrison', tag:'14 years', tagClass:'child', severe:false, sections:[
-      { label:'Notes', class:'', chipClass:'', items:['No restrictions','Adventurous · loves uni'] } ] }
+      { label:'Avoid', class:'avoid', chipClass:'avoid', items:['Horse','Whale'] },
+      { label:'Personal dislike', class:'', chipClass:'', items:['Shellfish / clams / oysters','Sea eel (Anago)'] },
+      { label:'Notes', class:'', chipClass:'', items:['Adventurous · loves uni'] } ] },
+  { name:'Brian Pilchik', tag:'Guest', tagClass:'adult', severe:true, sections:[
+      { label:'Strict · kosher — must avoid completely', class:'severe', chipClass:'severe', items:['All shellfish (shrimp, crab, lobster, mussels, oysters, clams, scallops)','All cephalopods (squid, octopus)','Eel — anago & unagi','Sea urchin (uni)','All meat & poultry (beef, pork, chicken, duck, lamb)'] },
+      { label:'Preference', class:'', chipClass:'', items:['Kosher pescatarian','Fish with fins & scales only — tuna, salmon, mackerel, yellowtail, flounder, trout'] } ] }
 ];
 var DIET_JP = [
   { name:'James (Jim) Attwood · ジム様', nameEn:'Adult guest · no allergies', severe:false, sections:[
@@ -675,7 +680,14 @@ var DIET_JP = [
   { name:'Leslie Williams · レスリー様', nameEn:'Adult guest · no allergies · prefers vegetables & seafood', severe:false, sections:[
       { label:'お控えいただきたい食材 · Please avoid', class:'avoid', text:'うなぎ・穴子などすべての鰻類 · 生肉（牛のタルタル等） · 鯨 · イルカ · 馬肉 · ラム（羊） · 山羊 · 仔牛 · 兎 · メカジキ · 仔動物（仔豚など）' },
       { label:'お好みではない食材 · Personal dislikes', class:'', text:'タコ' },
-      { label:'ご希望 · Preference', class:'', text:'野菜と魚介を中心にお好みです（卵・乳製品・出汁は問題ありません）' } ] }
+      { label:'ご希望 · Preference', class:'', text:'野菜と魚介を中心にお好みです（卵・乳製品・出汁は問題ありません）' } ] },
+  { name:'Harrison · ハリソン様', nameEn:'Guest · 14 years · no allergies', severe:false, sections:[
+      { label:'お控えいただきたい食材 · Please avoid', class:'avoid', text:'馬肉 · 鯨（くじら）' },
+      { label:'お好みではない食材 · Personal dislikes', class:'', text:'貝類・牡蠣・蛤など · 穴子（あなご）' },
+      { label:'ご参考 · Note', class:'', text:'ウニはお好きです' } ] },
+  { name:'Brian Pilchik · ブライアン様', nameEn:'Guest · kosher pescatarian (strict, religious)', severe:true, sections:[
+      { label:'宗教上の厳格な制限 · Strict (kosher) — must avoid', class:'severe', text:'甲殻類すべて（海老・蟹・ロブスター・ムール貝・牡蠣・蛤・帆立）· 頭足類（イカ・タコ）· うなぎ・穴子 · ウニ · 肉・鶏肉すべて（牛・豚・鶏・鴨・羊）' },
+      { label:'ご希望 · Preference', class:'', text:'コーシャ（ペスカタリアン）。ヒレと鱗のある魚のみ可（マグロ・鮭・鯖・ハマチ・ヒラメ・鱒）' } ] }
 ];
 
 /* ═══ DISCOVER ═══ */
